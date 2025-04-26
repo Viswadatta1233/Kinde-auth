@@ -1,0 +1,33 @@
+{
+  "name": "kinde-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test":"cross-env NODE_ENV=test dotenv -e .env.test jest --detectOpenHandles"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@kinde-oss/kinde-node-express": "^1.6.0",
+    "axios": "^1.8.4",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv-cli": "^8.0.0",
+    "jest": "^29.7.0",
+    "nock": "^14.0.4",
+    "supertest": "^7.1.0"
+  }
+}
