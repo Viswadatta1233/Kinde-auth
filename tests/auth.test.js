@@ -77,7 +77,7 @@ describe('Auth API', () => {
     expect(res.body.user).toHaveProperty('organizationName');
     expect(res.body.user).toHaveProperty('roleName');
   });
-
+console.log("tests");
 
 
 
