@@ -231,3 +231,4 @@ class KindeService {
 }
 
 module.exports = new KindeService();
+console.log('KindeService initialized');
