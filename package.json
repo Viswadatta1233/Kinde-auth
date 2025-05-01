@@ -2,9 +2,9 @@
   "name": "kinde-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "start.js",
   "scripts": {
-    "test":"cross-env NODE_ENV=test dotenv -e .env.test jest --detectOpenHandles"
+    "test": "cross-env NODE_ENV=test dotenv -e .env.test jest --detectOpenHandles"
   },
   "jest": {
     "testEnvironment": "node"
@@ -21,7 +21,7 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.2",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^2.7.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

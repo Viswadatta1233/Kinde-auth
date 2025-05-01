@@ -28,10 +28,13 @@ This repository implements a Node.js backend with Kinde integration for authenti
 1. Clone the repository
 2. Install dependencies: `npm install`
 3. Create `.env` file with:
-   - JWT_SECRET=your_secret_key
-   - PORT=3000 (optional)
-   - MONGO_URI_TEST=your_test_mongodb_uri (for testing)
-
+   PORT=3000
+MONGODB_URI=mongodb+srv://viswa:datta12345@cluster0.xrgo6.mongodb.net/kinde?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=your_jwt_secret_here
+KINDE_ISSUER_URL=https://shopifynew.kinde.com
+KINDE_CLIENT_ID=b81a4b7be0664577a4cfc9229ba77606
+KINDE_CLIENT_SECRET=vi3smAL0rFFrHQfrR5kzqu90Psz2A9Uxclb6TZOOyLCrnxEV4v26
+KINDE_AUDIENCE=https://shopifynew.kinde.com/api
 ## Running
 
 - Development: `npm start`
@@ -45,9 +48,14 @@ This repository implements a Node.js backend with Kinde integration for authenti
 
 ## Project Structure
 
-- server.js - Main Express application
-- tests/auth.test.js - API tests
-- .env - Environment variables
+-start.js - Main Express application
+-config/db.js for db connection
+-middleware/auth.js for middleware
+-controllers/authController.js for the auth controllers
+-services/kindeService.js for service layer
+-models/User.js has User model.
+-tests/auth.test.js - API tests
+-.env - Environment variables
 start command is node start.js
 and for test- the command is npm test
 AI-TOOL USED:AI BOT IN THE API DOCS OF KINDE WEBSITE
